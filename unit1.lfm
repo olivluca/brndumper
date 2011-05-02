@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 609
+  Height = 366
+  Top = 209
+  Width = 658
+  HorzScrollBar.Page = 701
+  VertScrollBar.Page = 443
+  ActiveControl = StartAddr
+  Caption = 'Brn Dumper'
+  ClientHeight = 366
+  ClientWidth = 658
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '0.9.30'
+  object BtnSend: TButton
+    Left = 451
+    Height = 25
+    Top = 288
+    Width = 75
+    Caption = 'Send'
+    Enabled = False
+    OnClick = BtnSendClick
+    TabOrder = 0
+  end
+  object BtnDump: TButton
+    Left = 536
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Dump'
+    Enabled = False
+    OnClick = BtnDumpClick
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 258
+    Top = 24
+    Width = 518
+    ReadOnly = True
+    ScrollBars = ssBoth
+    TabOrder = 2
+    WordWrap = False
+  end
+  object LineToSend: TEdit
+    Left = 8
+    Height = 25
+    Top = 288
+    Width = 433
+    TabOrder = 3
+  end
+  object StartAddr: TEdit
+    Left = 536
+    Height = 25
+    Top = 32
+    Width = 111
+    OnChange = StartAddrChange
+    TabOrder = 4
+    Text = '$b0090000'
+  end
+  object endaddr: TEdit
+    Left = 536
+    Height = 25
+    Top = 112
+    Width = 111
+    TabOrder = 5
+    Text = '$b0440000'
+  end
+  object ProgressBar1: TProgressBar
+    Left = 8
+    Height = 20
+    Top = 320
+    Width = 639
+    Smooth = True
+    Step = 1
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 18
+    Top = 344
+    Width = 16
+    Caption = '---'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 18
+    Top = 1
+    Width = 93
+    Caption = 'Messages/Reply'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 536
+    Height = 18
+    Top = 8
+    Width = 79
+    Caption = 'Start Address'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 536
+    Height = 38
+    Top = 72
+    Width = 80
+    Caption = 'End Address'#10'(not included)'
+    ParentColor = False
+  end
+  object SaveDialog1: TSaveDialog
+    left = 120
+    top = 88
+  end
+end
