@@ -73,4 +73,4 @@ From lazarus, "open package file", find synapse.lpk, press "Compile".
 Then you can open, modify and compile brndumper.lpi.
 A simpler way is to put synaser sources in the same directory as this project then, in lazarus, remove the dependency on synapse (I use the "complex" way since I use synapse/synaser in most of my projects, so it's actually more convenient).
 
-I provide a windows binary, I didn't test it with the router but it should work.
+I provide a [windows binary (https://drive.google.com/open?id=0BwPmW2whNqGld3dFNlpUd3FGVWc)], I didn't test it with the router but it should work.
